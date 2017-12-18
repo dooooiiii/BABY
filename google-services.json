@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "768065784656",
+    "firebase_url": "https://baby-baby2.firebaseio.com",
+    "project_id": "baby-baby2",
+    "storage_bucket": "baby-baby2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768065784656:android:d99f185ff94b616a",
+        "android_client_info": {
+          "package_name": "com.recursivesoft.babybaby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768065784656-g590f8bi8mgnvqlf5cpg73lu03ng3kdt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recursivesoft.babybaby",
+            "certificate_hash": "05c02dc47adb60e62e9a04667d2a33944032d907"
+          }
+        },
+        {
+          "client_id": "768065784656-qt2vkem6nc0r0nk4u4md12eqp57ngl63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmwr_me51yldDxeYjxpY6LM0iK15B_9hg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768065784656-qt2vkem6nc0r0nk4u4md12eqp57ngl63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

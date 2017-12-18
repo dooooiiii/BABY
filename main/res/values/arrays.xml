@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="age">
+        <item>뱃속</item>
+        <item>0~1개월</item>
+        <item>1~2개월</item>
+        <item>2~3개월</item>
+        <item>3~4개월</item>
+        <item>4~5개월</item>
+        <item>5~6개월</item>
+        <item>6~7개월</item>
+        <item>7~8개월</item>
+        <item>8~9개월</item>
+        <item>9~10개월</item>
+        <item>10~12개월</item>
+        <item>12~14개월</item>
+        <item>14~18개월</item>
+        <item>만 2세</item>
+        <item>만 3세</item>
+        <item>만 5세</item>
+        <item>만 6세 이상</item>
+
+    </string-array>
+
+</resources>

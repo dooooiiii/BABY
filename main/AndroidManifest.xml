@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.recursivesoft.babybaby">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".LoginAtivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Main" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Health" />
+        <activity android:name=".health_layout" />
+        <activity android:name=".HealthDetail" />
+        <activity
+            android:name=".Grow"
+            android:label="@string/title_activity_grow"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".tab1" />
+        <activity android:name=".DetailVaccin" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".Shop1" />
+        <activity android:name=".Shop2" />
+        <activity android:name=".Shop3" />
+        <activity android:name=".Music"></activity>
+    </application>
+
+</manifest>
