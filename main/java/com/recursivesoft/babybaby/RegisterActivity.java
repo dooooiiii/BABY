@@ -48,38 +48,17 @@ public class RegisterActivity extends AppCompatActivity implements GoogleApiClie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
         mAuth = FirebaseAuth.getInstance();
-
-
-        //       spinner = (Spinner) findViewById(R.id.ageSpinner);
-//       adapter = ArrayAdapter.createFromResource(this, R.array.age, android.R.layout.simple_spinner_dropdown_item);
-//        spinner.setAdapter(adapter);
-
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
 
-
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
                 .build();
-
-
-//        @SuppressLint("WrongViewCast") SignInButton googleLogin = (SignInButton)findViewById(R.id.loginButton);
-//
-//        googleLogin.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View view) {
-//                Log.d("abc","1");
-//                Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-//                startActivityForResult(signInIntent, RC_SIGN_IN);
-//            }
-//        });
 
         editTextEmail = (EditText) findViewById(R.id.emailtext);
         editTextPassword = (EditText) findViewById(R.id.passwordText);
@@ -99,28 +78,7 @@ public class RegisterActivity extends AppCompatActivity implements GoogleApiClie
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-
-
-//                        if (task.isSuccessful()) {
-//                            // Sign in success, update UI with the signed-in user's information
-//                            Log.d(TAG, "회원가입 성공");
-//                            FirebaseUser user = mAuth.getCurrentUser();
-//                            updateUI(user);
-//                        } else {
-////                            // If sign in fails, display a message to the user.
-//                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-//                            Toast.makeText(RegisterActivity.this, "회원가입 실패",
-//                                    Toast.LENGTH_SHORT).show();
-//                            updateUI(null);
-//                        }
-//
-//                        // ...
-//                      }
-//
-//                    private void updateUI(FirebaseUser user) {
-//                    }
-
-
+                        
                         if (!task.isSuccessful()) {
 
                         } else {
@@ -168,6 +126,4 @@ public class RegisterActivity extends AppCompatActivity implements GoogleApiClie
                     }
                 });
     }
-
-
 }
