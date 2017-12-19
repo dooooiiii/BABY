@@ -102,19 +102,5 @@ public class HealthDetail extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Intent intent = new Intent(HealthDetail.this, DetailVaccin.class);
-//                intent.putExtra("ages_put",vAge[i]);
-//                intent.putExtra("vaccin_put",vaccin[i]);
-//
-//                startActivity(intent);
-//            }
-//        });
     }
-
-
-
-
 }
