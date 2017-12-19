@@ -63,7 +63,7 @@ public class LoginAtivity extends AppCompatActivity {
                 startActivity(registerintent);
             }
         });
-//
+
         loginButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -99,7 +99,7 @@ public class LoginAtivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+                            //로그인 성공시 메인액티비티로 화면 넘어가기
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
 
@@ -108,7 +108,7 @@ public class LoginAtivity extends AppCompatActivity {
                             startActivity(in);
 
                         } else {
-                            // If sign in fails, display a message to the user.
+                            //로그인 실패시 출력 메세지
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(LoginAtivity.this, "아이디 또는 비밀번호를 재확인 해주세요",
                                     Toast.LENGTH_SHORT).show();
